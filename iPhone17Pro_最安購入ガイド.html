@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone 17 Pro 最安購入ガイド</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:         #f4f4ef;
+  --s1:         #ffffff;
+  --border:     #e0e0da;
+  --text:       #1a1a1a;
+  --sub:        #4a4a4a;
+  --muted:      #888;
+
+  --navy:       #0f2040;
+  --blue:       #1e5fbe;
+  --blue-lt:    #e8f0fc;
+  --blue-bdr:   #a8c4f0;
+  --blue-txt:   #1a3a7a;
+
+  --green:      #0a6e50;
+  --green-lt:   #e6f5f0;
+  --green-bdr:  #7dcbb8;
+  --green-txt:  #0a4a38;
+
+  --gold:       #9a5a00;
+  --gold-lt:    #fff8e6;
+  --gold-bdr:   #f5c46b;
+  --gold-txt:   #6b3d00;
+
+  --red:        #c0392b;
+  --red-lt:     #fef0ee;
+  --red-bdr:    #f5a09a;
+  --red-txt:    #8b2020;
+
+  --amber:      #8a5500;
+  --amber-lt:   #fff8e6;
+  --amber-bdr:  #f5c46b;
+
+  --purple:     #5a2d82;
+  --purple-lt:  #f5f0ff;
+  --purple-bdr: #c4a0f0;
+  --purple-txt: #3d1a5a;
+
+  --teal:       #0e7490;
+  --teal-lt:    #e0f9f6;
+  --teal-bdr:   #7dd3e8;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+.wrapper { max-width: 720px; margin: 0 auto; padding: 36px 20px 64px; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, #0f2040 0%, #1a5cbf 100%);
+  border-radius: 18px;
+  padding: 38px 40px 32px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #34d399, #fbbf24);
+}
+.hero::after {
+  content: '';
+  position: absolute; right: -60px; top: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(255,255,255,.05);
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.15); color: #fff;
+  font-size: 11px; font-weight: 700;
+  padding: 4px 14px; border-radius: 20px;
+  letter-spacing: 1px; border: 1px solid rgba(255,255,255,.25);
+  margin-bottom: 14px;
+}
+.hero-title {
+  font-size: clamp(22px, 5vw, 30px);
+  font-weight: 900; color: #fff;
+  line-height: 1.25; margin-bottom: 10px;
+}
+.hero-title .accent { color: #fbbf24; }
+.hero-sub { font-size: 13px; color: rgba(255,255,255,.7); line-height: 1.85; }
+
+/* ── SECTION HEAD ── */
+.sec-head {
+  display: flex; align-items: center; gap: 12px;
+  margin: 32px 0 16px;
+}
+.sec-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+}
+.sec-icon.blue   { background: var(--blue); }
+.sec-icon.green  { background: var(--green); }
+.sec-icon.gold   { background: var(--gold); }
+.sec-icon.purple { background: var(--purple); }
+.sec-title { font-size: 17px; font-weight: 700; color: var(--navy); }
+
+/* ── CARD ── */
+.card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+/* ── STEP FLOW ── */
+.step-flow { display: flex; flex-direction: column; gap: 0; }
+.step-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.step-item:last-child { border-bottom: none; }
+.step-item:nth-child(even) { background: #fafaf6; }
+
+.step-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  font-size: 14px; font-weight: 900; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--blue), #3a8dff);
+}
+.step-content { flex: 1; }
+.step-label {
+  font-size: 13px; font-weight: 700; color: var(--text);
+  margin-bottom: 4px;
+}
+.step-desc { font-size: 13px; color: var(--sub); line-height: 1.8; }
+.step-desc strong { color: var(--text); font-weight: 700; }
+.step-desc .em   { color: var(--blue);  font-weight: 700; }
+.step-desc .em-g { color: var(--green); font-weight: 700; }
+.step-desc .em-r { color: var(--red);   font-weight: 700; }
+
+/* ── STORE CARDS ── */
+.store-grid { display: flex; flex-direction: column; gap: 10px; }
+.store-card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+.store-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 18px;
+  border-bottom: 2px solid;
+}
+.store-name-wrap { flex: 1; }
+.store-name { font-size: 15px; font-weight: 700; }
+.store-carrier {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10px; font-weight: 700;
+  padding: 2px 9px; border-radius: 999px;
+  margin-top: 3px;
+}
+.store-body { padding: 12px 18px 14px; font-size: 13px; color: var(--sub); line-height: 1.85; }
+.store-body strong { color: var(--text); font-weight: 700; }
+
+/* edion */
+.s-edion .store-head { background: var(--blue-lt);   border-color: var(--blue-bdr); }
+.s-edion .store-name { color: var(--blue); }
+.s-edion .store-carrier { background: var(--blue); color: #fff; }
+/* bic */
+.s-bic .store-head { background: var(--teal-lt);   border-color: var(--teal-bdr); }
+.s-bic .store-name { color: var(--teal); }
+.s-bic .store-carrier { background: var(--teal); color: #fff; }
+/* yodobashi */
+.s-yodo .store-head { background: var(--red-lt);    border-color: var(--red-bdr); }
+.s-yodo .store-name { color: var(--red); }
+.s-yodo .store-carrier { background: var(--red); color: #fff; }
+/* yamada */
+.s-yamada .store-head { background: var(--green-lt);  border-color: var(--green-bdr); }
+.s-yamada .store-name { color: var(--green); }
+.s-yamada .store-carrier { background: var(--green); color: #fff; }
+/* joshin */
+.s-joshin .store-head { background: var(--purple-lt); border-color: var(--purple-bdr); }
+.s-joshin .store-name { color: var(--purple); }
+.s-joshin .store-carrier { background: var(--purple); color: #fff; }
+
+/* store note */
+.store-note {
+  display: flex; gap: 8px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.store-note.good  { background: var(--green-lt);  color: var(--green-txt); }
+.store-note.warn  { background: var(--amber-lt);  color: var(--gold-txt); }
+.store-note.check { background: var(--blue-lt);   color: var(--blue-txt); }
+.store-note strong { font-weight: 700; }
+
+/* ── PRICE CARDS ── */
+.price-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.price-card {
+  flex: 1; min-width: 200px;
+  background: var(--s1);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+.price-card .pc-carrier { font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
+.price-card .pc-amount {
+  font-size: 26px; font-weight: 900;
+  line-height: 1; margin-bottom: 4px;
+}
+.price-card .pc-unit { font-size: 11px; color: var(--muted); }
+.price-card.blue  { border-color: var(--blue-bdr);   }
+.price-card.blue  .pc-amount { color: var(--blue); }
+.price-card.green { border-color: var(--green-bdr);  }
+.price-card.green .pc-amount { color: var(--green); }
+.price-card.gold  { border-color: var(--gold-bdr);   }
+.price-card.gold  .pc-amount { color: var(--gold); }
+
+/* ── NOTE / CALLOUT ── */
+.note {
+  border-left: 3px solid; border-radius: 0 8px 8px 0;
+  padding: 10px 14px; font-size: 12.5px; line-height: 1.8;
+}
+.note.blue   { border-color: var(--blue);      background: var(--blue-lt);   color: var(--blue-txt); }
+.note.green  { border-color: var(--green);     background: var(--green-lt);  color: var(--green-txt); }
+.note.amber  { border-color: var(--amber-bdr); background: var(--amber-lt);  color: var(--gold-txt); }
+.note.red    { border-color: var(--red);       background: var(--red-lt);    color: var(--red-txt); }
+.note.purple { border-color: var(--purple-bdr);background: var(--purple-lt); color: var(--purple-txt); }
+.note strong { font-weight: 700; }
+
+/* ── BIG CTA BANNER ── */
+.cta-banner {
+  background: linear-gradient(135deg, #0a3000, #0f5000);
+  border: 1.5px solid rgba(52,211,153,.35);
+  border-radius: 16px;
+  padding: 28px 28px;
+  margin-top: 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(52,211,153,.12) 0%, transparent 70%);
+}
+.cta-title {
+  font-size: 18px; font-weight: 700; color: #fff;
+  margin-bottom: 8px; position: relative;
+}
+.cta-title .acc { color: #4ade80; }
+.cta-body { font-size: 13px; color: rgba(255,255,255,.75); line-height: 1.85; position: relative; }
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center; font-size: 11.5px; color: var(--muted);
+  margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--border);
+}
+
+@media(max-width:540px){
+  .hero { padding: 28px 24px 24px; }
+  .price-row { flex-direction: column; }
+  .price-card { min-width: unset; }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📱 2025年5月調査・最新情報</div>
+  <h1 class="hero-title">
+    iPhone 17 Pro を<span class="accent">最安</span>で買う<br>量販店MNP × Web光還元の合わせ技
+  </h1>
+  <p class="hero-sub">
+    端末値引き規制を突破する「勝ちパターン」を完全解説。<br>
+    何も知らずに店に行くのは損。事前に戦略を立ててから動きましょう。
+  </p>
+</div>
+
+<!-- STEP FLOW -->
+<div class="sec-head">
+  <div class="sec-icon blue">🚀</div>
+  <div class="sec-title">最強の立ち回り：3ステップ</div>
+</div>
+
+<div class="card">
+  <div class="step-flow">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-label">まず「Web光回線」で現金CBを確約する</div>
+        <div class="step-desc">
+          光回線のオンライン代理店から申し込むと、<span class="em">現金キャッシュバック</span>が確約できます。店頭よりも高還元になるケースが多く、1〜15万円の案件も存在します。先にここを抑えてから量販店へ向かうのが基本の順序です。
+        </div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-label">週末に量販店へ：SIM単体MNPで店舗ポイントを上乗せ</div>
+        <div class="step-desc">
+          土日・祝日は量販店のCBが<span class="em">1,000〜2,000円程度高くなる</span>傾向があります。SIM単体でMNP（乗り換え）することで、店舗ポイントや現金CBを追加で獲得できます。
+        </div>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-label">獲得した「現金＋ポイント」で端末を購入</div>
+        <div class="step-desc">
+          ステップ1・2で積み上げた現金CB・ポイントを<span class="em-g">軍資金として総動員</span>して端末を購入します。光セットや家族乗り換えを組み合わせれば、<strong>10万円以上の還元も現実的</strong>です。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="note amber" style="margin-bottom:28px;">
+  💡 <strong>ポイント：</strong>光回線（Web申込）→ SIM MNP（量販店）の順番を守ることで、それぞれの還元を最大化できます。逆にすると条件が変わる場合があるため注意。
+</div>
+
+<!-- STORE GUIDE -->
+<div class="sec-head">
+  <div class="sec-icon gold">🏬</div>
+  <div class="sec-title">家電量販店5社の選び方</div>
+</div>
+
+<div class="store-grid">
+
+  <!-- エディオン -->
+  <div class="store-card s-edion">
+    <div class="store-head">
+      <div class="store-name-wrap">
+        <div class="store-name">エディオン</div>
+        <span class="store-carrier">UQ乗り換えが強い</span>
+      </div>
+    </div>
+    <div class="store-body">
+      UQ乗り換えで<strong>最大5万pt</strong>を獲得できるケースあり。Apple製品購入に即日使えるのが最大の強み。
+      <div class="store-note good">✅ <strong>強み：</strong>UQ案件での還元額が高く、ポイントをその日のうちにiPhone購入に充当できる。</div>
+      <div class="store-note warn">⚠️ <strong>注意：</strong>乗り換え元のマイページ確認を求める店舗が増えているため、弾の種類によっては通らないケースあり。</div>
+    </div>
+  </div>
+
+  <!-- ビックカメラ -->
+  <div class="store-card s-bic">
+    <div class="store-head">
+      <div class="store-name-wrap">
+        <div class="store-name">ビックカメラ</div>
+        <span class="store-carrier">ワイモバイル還元が手厚い</span>
+      </div>
+    </div>
+    <div class="store-body">
+      ワイモバイルへの乗り換えCBが手厚く、他店対抗交渉が通りやすいのも特徴。
+      <div class="store-note good">✅ <strong>強み：</strong>他店のCB額を提示すると上乗せ交渉に応じてくれることがある。</div>
+      <div class="store-note check">💡 来店前に競合他社の還元額を調べてから行くと交渉しやすい。</div>
+    </div>
+  </div>
+
+  <!-- ヨドバシ -->
+  <div class="store-card s-yodo">
+    <div class="store-head">
+      <div class="store-name-wrap">
+        <div class="store-name">ヨドバシカメラ</div>
+        <span class="store-carrier">還元額は高め・条件確認必須</span>
+      </div>
+    </div>
+    <div class="store-body">
+      還元額自体は高水準だが、<strong>「当日値引き」がiPhone購入に使えないケース</strong>があるため注意が必要。
+      <div class="store-note warn">⚠️ <strong>注意：</strong>MNP特典の還元内容をよく確認し、iPhone購入に利用できる形式かを必ず事前確認すること。</div>
+    </div>
+  </div>
+
+  <!-- ヤマダ電機 -->
+  <div class="store-card s-yamada">
+    <div class="store-head">
+      <div class="store-name-wrap">
+        <div class="store-name">ヤマダ電機</div>
+        <span class="store-carrier">ドコモ現金CBが貴重</span>
+      </div>
+    </div>
+    <div class="store-body">
+      ドコモMNPで「現金キャッシュバック」が受けられる貴重な選択肢。現金派にはメリット大。
+      <div class="store-note good">✅ <strong>強み：</strong>ポイントではなく現金で還元されるため、使い勝手が最もいい。ドコモ光セットとの組み合わせで増額しやすい。</div>
+    </div>
+  </div>
+
+  <!-- Joshin -->
+  <div class="store-card s-joshin">
+    <div class="store-head">
+      <div class="store-name-wrap">
+        <div class="store-name">Joshin（上新電機）</div>
+        <span class="store-carrier">ドコモ光セットで爆上がり</span>
+      </div>
+    </div>
+    <div class="store-body">
+      ドコモ光とのセット申し込みで還元額が大幅増。関西圏で特に強く、来店して直接確認するのが最短ルート。
+      <div class="store-note good">✅ <strong>強み：</strong>ドコモ光セット案件の還元額が他店比で高くなりやすい。</div>
+      <div class="store-note check">💡 電話ではCB額をほぼ教えてくれない。来店して直接スタッフに確認するのが基本。</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PRICE TABLE -->
+<div class="sec-head">
+  <div class="sec-icon green">💰</div>
+  <div class="sec-title">還元相場（2025年5月調査）</div>
+</div>
+
+<div class="price-row">
+  <div class="price-card blue">
+    <div class="pc-carrier">UQ / ワイモバイル</div>
+    <div class="pc-amount">2〜5<span style="font-size:16px;">万円</span></div>
+    <div class="pc-unit">相当（ポイント含む）</div>
+  </div>
+  <div class="price-card green">
+    <div class="pc-carrier">ドコモ</div>
+    <div class="pc-amount">2〜3<span style="font-size:16px;">万円</span></div>
+    <div class="pc-unit">相当（現金CBあり）</div>
+  </div>
+  <div class="price-card gold">
+    <div class="pc-carrier">光セット＋家族乗り換え</div>
+    <div class="pc-amount">10<span style="font-size:16px;">万円〜</span></div>
+    <div class="pc-unit">組み合わせ次第で到達可能</div>
+  </div>
+</div>
+
+<div class="note purple" style="margin-top:4px;">
+  🔬 <strong>還元額の内訳：</strong>SIM単体MNP＋光回線Web申込＋家族乗り換え＋電気セットを全て組み合わせると10万円超えが現実的なラインになります。各条件を1つ1つ丁寧に積み上げることが重要です。
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-title">事前準備が<span class="acc">すべて</span>を決める</div>
+  <div class="cta-body">
+    何も知らずに店頭へ行くのは大きな損。<br>
+    光回線のWeb申込→量販店MNPの順番と、各店舗の強みを把握した上で動くだけで<br>
+    受け取れる還元額が数万円単位で変わります。
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  iPhone 17 Pro 最安購入ガイド ／ 2025年5月調査情報 ／ 店舗・案件状況は随時変動します
+</div>
+
+</div><!-- /wrapper -->
+</body>
+</html>
